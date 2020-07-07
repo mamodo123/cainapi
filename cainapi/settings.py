@@ -129,6 +129,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'cainapi/static'),
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
